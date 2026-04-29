@@ -1,12 +1,12 @@
 interface SpeakerCardProps {
   name: string;
-  role: string;
+  price: string;
   imageUrl: string;
 }
 
 export const SpeakerCard: React.FC<SpeakerCardProps> = ({
   name,
-  role,
+  price,
   imageUrl,
 }) => {
   return (
@@ -23,7 +23,7 @@ export const SpeakerCard: React.FC<SpeakerCardProps> = ({
         <div className="absolute bottom-0 px-4 py-6 rounded-lg w-full h-full flex flex-col items-center gap-2 group-hover:bg-gray-400 backdrop-blur-sm transition-all duration-300"></div>
         <div className="absolute left-0 right-0 bottom-0 items-center justify-center p-4 flex flex-col gap-2">
           <h3 className="text-2xl text-black font-semibold">{name}</h3>
-          <p className="text-sm text-gray-600 text-center">{role}</p>
+          <p className="text-sm text-gray-600 text-center">{price}</p>
         </div>
       </div>
     </div>

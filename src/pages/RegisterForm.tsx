@@ -4,6 +4,7 @@ import { InputPassword } from "../components/ui/inputPassword";
 
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod"
+import { Link } from "react-router-dom";
 type FormData = {
     name: string;
     email: string;
@@ -61,6 +62,10 @@ export default function RegisterForm() {
 
             <div>
                 <button type="submit">Register</button>
+            </div>
+
+            <div>
+                Sudah Punya Akun?<Link to="/login">Daftar Disini</Link>
             </div>
         </form>
     </div>
